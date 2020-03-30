@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>{% block title %}Signaleo{% endblock %}</title>
+    <meta name="description"
+          content="Signaleo dia application iray natao hifampizarana ny tranga samy hafa eny andalana , natao ihany koa ahafahana manao covoiturage eto Madagasikara">
+    <meta name="keywords" content="signaleo,embouteillage,madagascar,covoiturage,cotaxi,antananarivo,coronavirus">
+    <meta name="author" content="Signaleo">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="icon" href="{{ asset('image/logo.png') }}">
+    {% block stylesheets %}
+        {{ encore_entry_link_tags('app') }}
+    {% endblock %}
+    {#        <script src="https://cdn.onesignal.com/sdks/OneSignalSDK.js" async=""></script>#}
+    {#        <script>#}
+    {#            let OneSignal = window.OneSignal || [];#}
+    {#            OneSignal.push(function() {#}
+    {#                OneSignal.init({#}
+    {#                    appId: "f72b9ebd-4e68-4c99-8187-b6f521fdaf3d",#}
+    {#                });#}
+    {#            });#}
+    {#        </script>#}
+</head>
+<body>
+{% block body %}
+    <div id="root"></div>
+{% endblock %}
+{% block javascripts %}
+    {{ encore_entry_script_tags('app') }}
+{% endblock %}
+</body>
+</html>

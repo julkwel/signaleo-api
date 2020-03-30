@@ -1,0 +1,4 @@
+kreait_firebase:
+  projects:
+    signaleo:
+      credentials: '%kernel.project_dir%/config/signaleo-firebase-adminsdk.json'

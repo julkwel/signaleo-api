@@ -1,0 +1,238 @@
+@import "~bootstrap";
+@import "~@fortawesome/fontawesome-free/css/all.min.css";
+
+@font-face {
+    font-family: "Montserrat";
+    src: url("../Font/Montserrat/Montserrat-Medium.ttf") format("truetype");
+}
+
+* {
+    font-family: Montserrat, serif;
+    font-size: 12px;
+}
+
+body {
+    background-color: #e4e7ef94;
+    height: 100vh;
+    overflow: hidden;
+}
+
+@media (min-width: 576px) {
+    .d-sm-none {
+        display: block !important;
+    }
+
+    .actualite-list {
+        width: 70%;
+    }
+}
+
+@media (max-width: 576px) {
+    body{
+        overflow-y: auto;
+    }
+    .d-sm-none {
+        display: none !important;
+    }
+
+    .top-mobile {
+        margin-top: 150px !important;
+    }
+
+    .actualite-list {
+        width: 100%;
+    }
+
+    .tracking-date {
+        font-size: 12px;
+    }
+}
+
+body {
+    width: 100%;
+    overflow-x: hidden;
+}
+
+.scrollbar::-webkit-scrollbar {
+    width: 10px;
+    background-color: #F5F5F5;
+}
+
+.scrollbar::-webkit-scrollbar-thumb {
+    background-color: #0ae;
+
+    background-image: -webkit-gradient(linear, 0 0, 0 100%,
+    color-stop(.5, rgba(255, 255, 255, .2)),
+    color-stop(.5, transparent), to(transparent));
+}
+
+.navbar-dark .navbar-nav .nav-link {
+    color: white;
+}
+
+.text-message {
+    display: flex;
+    height: 200px;
+    background:#177bfe !important;
+    color: #fff;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    font-size: 20px;
+}
+
+.custom-file-input ~ .custom-file-label::after {
+    content: "Sary";
+}
+
+.input-comment {
+    border: solid 1px #054fb19e;
+    border-radius: 12px;
+    box-shadow: 0 0 2px 0 rgba(32, 33, 36, 0.28);
+}
+
+.list-comment {
+    border: none;
+}
+
+.card {
+    border: 1px solid rgba(73, 71, 234, 0.06);
+}
+
+.card-footer {
+    background: rgba(130, 108, 181, 0.03);
+    border-top: none;
+}
+
+.card-header {
+    background: rgba(210, 210, 210, 0.15);
+    border-bottom: none;
+    box-shadow: 0 0 2px 0 rgba(32, 33, 36, 0.28);
+}
+
+.container-fluid > nav {
+    box-shadow: 0 2px 6px 0 rgba(8, 12, 23, 0.61);
+}
+
+.notifDrop {
+    padding: 0;
+    color: white;
+}
+
+.notifDrop::after {
+    display: none;
+}
+.nav-user-circle{
+    border: 1px solid #a5a5c1;
+    width: 30px;
+    height: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    background: white;
+}
+.drop-nav-user{
+    /* wrap text in compatible browsers */
+    -moz-white-space: pre-wrap;
+    -o-white-space: pre-wrap;
+    white-space: pre-wrap;
+    /* hide text that can't wrap with an ellipsis */
+    overflow: hidden;
+    text-overflow: ellipsis;
+    /* add border after every option */
+    border-bottom: 1px solid #DDD;
+}
+
+.nav-drop-icon{
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+}
+
+
+.image_outer_container{
+    margin-top: auto;
+    margin-bottom: auto;
+    border-radius: 50%;
+    position: relative;
+}
+
+.image_inner_container{
+    border-radius: 50%;
+    padding: 5px;
+    background: #833ab4;
+    background: -webkit-linear-gradient(to bottom, #fcb045, #fd1d1d, #833ab4);
+    background: linear-gradient(to bottom, #fcb045, #fd1d1d, #833ab4);
+}
+.image_inner_container img{
+    height: 200px;
+    width: 200px;
+    border-radius: 50%;
+    border: 5px solid white;
+}
+
+.image_outer_container .green_icon{
+    background-color: #4cd137;
+    position: absolute;
+    right: 30px;
+    bottom: 10px;
+    height: 30px;
+    width: 30px;
+    border:5px solid white;
+    border-radius: 50%;
+}
+
+.button-container{
+    display: block;
+    position: relative;
+    width: 100%;
+    text-align: end;
+    right: 1%;
+}
+
+.button-edit-profile{
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    padding: 14px;
+}
+
+.rounded-nav{
+    width: 40px;
+    height: 40px;
+    border: none;
+    border-radius: 50%;
+    text-align: center;
+    background: #423b3b;
+}
+
+.react-datetime-picker__wrapper{
+    border: none;
+}
+
+.comment-reply{
+    border: none;
+}
+
+.comment-data{
+    background: #f7f7f7;
+    border-radius: 25px;
+    padding: 3px;
+}
+.reaction-text > i,.reaction-text > span{
+    font-size: 18px;
+}
+
+.badge-info-actu{
+    font-size: 15px;
+}
+
+.overflow-y-auto{
+    overflow-y: auto;
+    overflow-x: hidden;
+}
+
+.infinite-scroll-component {
+    overflow-x: hidden!important;
+}
